@@ -1,14 +1,14 @@
 import React from 'react'
-import AddCard from './AddCard'
+import AddCard from '../pages/AddCard'
 import '../index.css'
 
 
 
-Cypres.Comands.add('alertErrorHaveText', (expectedText) => {
+Cypress.Commands.add('alertErrorHaveText', (expectedText) => {
 
       cy.contains('.alert-error', expectedText )
        .should('be.visible')
-}
+});
 
 
 describe('<AddCard />', () => {
